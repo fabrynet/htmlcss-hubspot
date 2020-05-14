@@ -17,17 +17,20 @@ a, a:visited {
   padding: 0 20%;
 }
 /* clearfix dei float */
-.wrapper:after {
+.wrapper:after, .box:after {
   content: "";
   display: table;
   clear: both;
 }
 /* regole per i pulsanti (di tipo a) */
-.buttons {
+.buttons1, .buttons2 {
   background-color: #fe775a;
   padding: 10px 20px;
   border-radius: 5px;
   color: #fff;
+}
+.buttons2 {
+  padding: 20px 30px;
 }
 .logins {
   background-color: transparent;
@@ -58,8 +61,8 @@ li.inline-menu-item a:hover {
 li.inline-menu-item a:visited {
   color: #33475b;
 }
-li.inline-menu-item .buttons,
-li.inline-menu-item .buttons:visited {
+li.inline-menu-item .buttons1,
+li.inline-menu-item .buttons1:visited {
   color: #fff;
 }
 li.inline-menu-item .logins,
@@ -86,6 +89,7 @@ ul li a img {
   width: 20px;
   margin: 0 5px;
 }
+
 /* menu fisso in alto */
 .nav-fixed {
   height: 100px;
@@ -112,7 +116,7 @@ ul li a img {
   height: 100%; */
 }
 .nav-fixed-right .logins,
-.nav-fixed-right .buttons {
+.nav-fixed-right .buttons1 {
   margin: 0 0 0 10px;
 }
 
@@ -157,17 +161,80 @@ ul li a img {
 }
 .hubspotfree p {
   margin: 40px 0;
-  font-size: 10px;
+  font-size: 12px;
 }
-.hubspotfree .buttons {
+.hubspotfree .buttons2 {
   padding: 20px;
 }
-
 
 /* main */
 main {
 
 }
+/* sezione 1 */
+.section1 {
+  background-color: #f4f9fd;
+  /* debug */
+  /* height: 200px; */
+}
+.section1 .rubik .wrapper {
+  padding: 50px;
+  /* debug */
+  /* background-color: green; */
+}
+/* rubik */
+.rubik {
+  text-align: center;
+  /* debug */
+  /* height: 100px; */
+  /* background-color: red;  */
+}
+.rubik img {
+  width: 300px;
+}
+.rubik h2 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+.rubik p {
+  font-weight: bold;
+}
+/* crm */
+.section1 .crm .wrapper {
+  padding: 50px;
+  background-color: #fff;
+  border: 1px solid lightgrey;
+}
+.crm .column1 {
+  float: left;
+  width: 30%;
+}
+.crm .column2 {
+  float: left;
+  width: 70%;
+}
+.crm .column1 img {
+  width: 150px;
+}
+.crm .column2 .column1 {
+  float: left;
+}
+.crm .column2 .column2 {
+  float: left;
+}
+.crm .column2 ul li {
+  margin: 0 20px;
+}
+.crm .column2 ul li:before {
+    content: "";
+    background: url("../img/Orange_Checkmark.svg") no-repeat;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-bottom: -5px;
+    margin-right: 10px;
+  }
 /* footer */
 footer {
   background-color: #32495b;

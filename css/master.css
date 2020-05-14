@@ -5,3 +5,172 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* regole generali */
+body {
+  font-family: Montserrat, sans-serif;
+  color: #33475b;
+}
+a, a:visited {
+  text-decoration: none;
+}
+.container {
+  padding: 0 20%;
+}
+/* clearfix dei float */
+.wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* regole per i pulsanti (di tipo a) */
+.buttons {
+  background-color: #fe775a;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+}
+.logins {
+  background-color: transparent;
+  padding: 10px;
+  border: 1px solid #fe775a;
+  border-radius: 5px;
+  color: #fe775a;
+}
+/* menu di navigazione */
+ul.inline-menu {
+  list-style-type: none;
+  overflow: hidden;
+  padding: 10px 0;
+}
+li.inline-menu-item {
+  float: left;
+}
+li.inline-menu-item a {
+  display: block;
+  line-height: 40px;
+  text-align: center;
+  padding: 0 20px;
+  color: #33475b;
+}
+li.inline-menu-item a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+li.inline-menu-item a:visited {
+  color: #33475b;
+}
+li.inline-menu-item .buttons,
+li.inline-menu-item .buttons:visited {
+  color: #fff;
+}
+li.inline-menu-item .logins,
+li.inline-menu-item .logins:visited {
+  color: #fe775a;
+}
+
+/* header */
+header {
+  height: 850px;
+  /* debug */
+}
+/* stili generali per menu header */
+#language::after,
+.navbar ul li a::after {
+  content: ' \25BC';
+}
+#language {
+  border-right: 1px solid #32495b;
+}
+ul li a img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  margin: 0 5px;
+}
+/* menu fisso in alto */
+.nav-fixed {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #f4f9fd;
+  border-bottom: 1px solid #32495b;
+}
+.nav-fixed .nav-fixed-left {
+  float: left;
+  padding: 20px 0;
+  /* debug */
+  /* background-color: red;
+  height: 100%; */
+}
+.nav-fixed .nav-fixed-right {
+  float: right;
+  padding: 20px 0;
+  /* debug */
+  /* background-color: red;
+  height: 100%; */
+}
+.nav-fixed-right .logins,
+.nav-fixed-right .buttons {
+  margin: 0 0 0 10px;
+}
+
+/* menu top */
+.nav-top {
+  /* margine superiore per lasciare spazio al menu con position fixed */
+  margin-top: 100px;
+  height: 100px;
+}
+.nav-top .logo {
+  float: left;
+  padding: 35px 0;
+}
+.nav-top .navbar {
+  float: right;
+  padding: 20px 0;
+}
+
+/* jumbotron */
+.jumbo {
+  position: relative;
+  height: 750px;
+  background: #fff4ef url(../img/jumbotron.png) no-repeat bottom right;
+  background-size: 100%;
+}
+.jumbo-content {
+  width: 25%;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+}
+.jumbo-content h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.jumbo-content p:first-of-type {
+  margin: 40px 0;
+  line-height: 2em;
+}
+.hubspotfree {
+  width: 40%;
+}
+.hubspotfree p {
+  margin: 40px 0;
+  font-size: 10px;
+}
+.hubspotfree .buttons {
+  padding: 20px;
+}
+
+
+/* main */
+main {
+
+}
+/* footer */
+footer {
+  background-color: #32495b;
+  /* debug */
+  height: 800px;
+}

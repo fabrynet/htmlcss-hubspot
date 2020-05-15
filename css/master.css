@@ -39,17 +39,18 @@ h1, h2, h3, p {
   float: left;
 }
 /* regole per i pulsanti (di tipo a) */
-.buttons {
+.button {
   display: inline-block;
   background-color: #fe775a;
   padding: 20px 30px;
   border-radius: 5px;
   color: #fff;
 }
-.buttons:hover {
-  background-color: rgba(254, 119, 90, 0.5);
+.button:hover {
+  transition: 0.5s;
+  background-color: rgba(254, 119, 90, 0.6);
 }
-.logins {
+.login {
   display: inline-block;
   background-color: transparent;
   padding: 10px;
@@ -57,8 +58,9 @@ h1, h2, h3, p {
   border-radius: 5px;
   color: #fe775a;
 }
-.buttons:hover {
-  background-color: rgba(254, 119, 90, 0.5);
+.login:hover {
+  transition: 0.5s;
+  background-color: rgba(254, 119, 90, 0.3);
 }
 
 /* regole per i menu di navigazione inline */
@@ -67,7 +69,8 @@ ul.inline-menu {
   overflow: hidden;
 }
 li.inline-menu-item {
-  float: left;
+  /* float: left; */
+  display: inline-block;
 }
 li.inline-menu-item a {
   display: block;
@@ -75,18 +78,27 @@ li.inline-menu-item a {
   color: #33475b;
 }
 li.inline-menu-item a:hover {
+  transition: 0.5s;
   background-color: rgba(0, 0, 0, 0.2);
 }
 li.inline-menu-item a:visited {
   color: #33475b;
 }
-li.inline-menu-item .buttons,
-li.inline-menu-item .buttons:visited {
+li.inline-menu-item .button,
+li.inline-menu-item .button:visited {
   color: #fff;
 }
-li.inline-menu-item .logins,
-li.inline-menu-item .logins:visited {
+li.inline-menu-item .button:hover {
+  transition: 0.5s;
+  background-color: rgba(254, 119, 90, 0.6);
+}
+li.inline-menu-item .login,
+li.inline-menu-item .login:visited {
   color: #fe775a;
+}
+li.inline-menu-item .login:hover {
+  transition: 0.5s;
+  background-color: rgba(254, 119, 90, 0.3);
 }
 
 /* header */
@@ -129,13 +141,13 @@ ul li a img {
   width: 50%;
 }
 .nav-fixed .nav-fixed-right {
-  float: right;
+  text-align: right;
   /* debug */
   /* background-color: red;
   height: 100%; */
 }
-.nav-fixed-right .logins,
-.nav-fixed-right .buttons {
+.nav-fixed-right .login,
+.nav-fixed-right .button {
   margin-left: 10px;
 }
 
@@ -149,9 +161,13 @@ ul li a img {
 .nav-top .wrapper {
   padding: 20px 0;
 }
+.nav-top .logo {
+  width: 15%;
+  padding-top: 5px;
+}
 .nav-top .navbar {
-  float: right;
-  /* padding: 20px 0; */
+  width: 85%;
+  text-align: right;
 }
 
 /* jumbotron */
@@ -234,6 +250,19 @@ ul li a img {
 .crm .col-2 ul li {
   margin: 0 20px;
 }
+.crm .col-2 h3,
+.crm .col-2 span {
+  display: inline-block;
+  width: 39%;
+  height: 40px;
+  line-height: 40px;
+}
+.crm .col-2 span {
+    width: 60%;
+}
+.crm .col-2 ul {
+  padding-bottom: 5px;
+}
 .crm .col-2 ul li:before {
     content: "";
     background: url("../img/Orange_Checkmark.svg") no-repeat;
@@ -259,6 +288,21 @@ ul li a img {
 .cards [class*="col-"] img {
   height: 100px;
 }
+.cards [class*="col-"] ul {
+  list-style-type: none;
+  text-align: left;
+  margin-bottom: 40px;
+}
+.cards [class*="col-"] ul li:before {
+    content: "";
+    background: url("../img/Orange_Checkmark.svg") no-repeat;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-bottom: -5px;
+    margin-right: 10px;
+  }
+
 
 /* footer */
 footer {

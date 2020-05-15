@@ -22,45 +22,49 @@ h1, h2, h3, p {
 .container {
   padding: 0 15%;
 }
+.block {
+  background-color: #fff;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
 /* clearfix dei float */
 .wrapper:after, .box:after {
   content: "";
   display: table;
   clear: both;
 }
+[class*="col-"] {
+  float: left;
+}
 /* regole per i pulsanti (di tipo a) */
-.buttons1, .buttons2 {
+.buttons {
+  display: inline-block;
   background-color: #fe775a;
-  padding: 10px 20px;
+  padding: 20px 30px;
   border-radius: 5px;
   color: #fff;
 }
-.buttons2 {
-  padding: 20px 30px;
+.buttons:hover {
+  background-color: rgba(254, 119, 90, 0.5);
 }
 .logins {
+  display: inline-block;
   background-color: transparent;
   padding: 10px;
   border: 1px solid #fe775a;
   border-radius: 5px;
   color: #fe775a;
 }
-/* menu di navigazione */
+/* regole per i menu di navigazione inline */
 ul.inline-menu {
   list-style-type: none;
   overflow: hidden;
-  padding: 10px 0;
-}
-.nav-fixed-left .inline-menu .inline-menu-item:first-of-type {
-  padding-left: 0;
 }
 li.inline-menu-item {
   float: left;
 }
 li.inline-menu-item a {
   display: block;
-  line-height: 40px;
-  /* text-align: center; */
   padding: 0 20px;
   color: #33475b;
 }
@@ -70,8 +74,8 @@ li.inline-menu-item a:hover {
 li.inline-menu-item a:visited {
   color: #33475b;
 }
-li.inline-menu-item .buttons1,
-li.inline-menu-item .buttons1:visited {
+li.inline-menu-item .buttons,
+li.inline-menu-item .buttons:visited {
   color: #fff;
 }
 li.inline-menu-item .logins,
@@ -81,7 +85,7 @@ li.inline-menu-item .logins:visited {
 
 /* header */
 header {
-  height: 850px;
+  height: 830px;
   /* debug */
 }
 /* stili generali per menu header */
@@ -101,7 +105,8 @@ ul li a img {
 
 /* menu fisso in alto */
 .nav-fixed {
-  height: 100px;
+  height: 80px;
+  line-height: 40px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -110,38 +115,43 @@ ul li a img {
   background-color: #f4f9fd;
   border-bottom: 1px solid lightgrey;
 }
-.nav-fixed .nav-fixed-left {
-  float: left;
+.nav-fixed .wrapper {
   padding: 20px 0;
-  /* debug */
-  /* background-color: red;
-  height: 100%; */
 }
-.nav-fixed .nav-fixed-right {
-  float: right;
-  padding: 20px 0;
+/* .nav-fixed .col-1 ul li a:first-of-type {
+  line-height: 20px;
+} */
+.nav-fixed .col-1, .nav-fixed .col-2 {
+  width: 50%;
+}
+.nav-fixed .col-2 .inline-menu {
+  text-align: right;
+  /* float: right; */
   /* debug */
   /* background-color: red;
   height: 100%; */
 }
 .nav-fixed-right .logins,
-.nav-fixed-right .buttons1 {
+.nav-fixed-right .buttons {
   margin-left: 10px;
+}
+.nav-fixed-left .inline-menu .inline-menu-item:first-of-type {
+  padding-left: 0;
 }
 
 /* menu top */
 .nav-top {
   /* margine superiore per lasciare spazio al menu con position fixed */
-  margin-top: 100px;
-  height: 100px;
+  margin-top: 80px;
+  height: 80px;
+  line-height: 40px;
 }
-.nav-top .logo {
-  float: left;
-  padding: 35px 0;
+.nav-top .wrapper {
+  padding: 20px 0;
 }
 .nav-top .navbar {
   float: right;
-  padding: 20px 0;
+  /* padding: 20px 0; */
 }
 
 /* jumbotron */
@@ -205,43 +215,30 @@ main {
   font-weight: bold;
 }
 /* crm */
-.section1 .crm .wrapper {
+.section1 .crm {
   padding: 50px;
-  background-color: #fff;
-  border: 1px solid lightgrey;
 }
-.crm .column1 {
-  float: left;
+.crm .col-1 {
   width: 20%;
   margin: 0 10%;
 }
-.crm .column2 {
-  float: left;
+.crm .col-2 {
   width: 50%;
   margin-right: 10%;
 }
-.crm .column1 img {
+.crm .col-1 img {
   display: block;
   width: 150px;
   margin: 0 auto 30px;
 }
-.crm .column1 a {
+.crm .col-1 a {
   display: block;
   text-align: center;
 }
-.crm .column2 h3 {
-  margin
-}
-.crm .column2 .column1 {
-  float: left;
-}
-.crm .column2 .column2 {
-  float: left;
-}
-.crm .column2 ul li {
+.crm .col-2 ul li {
   margin: 0 20px;
 }
-.crm .column2 ul li:before {
+.crm .col-2 ul li:before {
     content: "";
     background: url("../img/Orange_Checkmark.svg") no-repeat;
     width: 18px;

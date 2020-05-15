@@ -250,9 +250,14 @@ ul li a img {
 }
 .cards [class*="col-"] {
   width: 30%;
+  padding: 20px;
+  text-align: center;
 }
 .cards .col-2 {
   margin: 0 5%;
+}
+.cards [class*="col-"] img {
+  height: 100px;
 }
 
 /* footer */

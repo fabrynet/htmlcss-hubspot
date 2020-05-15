@@ -13,8 +13,14 @@ body {
 a, a:visited {
   text-decoration: none;
 }
+h1, h2, h3, p {
+  margin: 20px 0;
+}
+.p-pic {
+  font-size: 12px;
+}
 .container {
-  padding: 0 20%;
+  padding: 0 15%;
 }
 /* clearfix dei float */
 .wrapper:after, .box:after {
@@ -45,13 +51,16 @@ ul.inline-menu {
   overflow: hidden;
   padding: 10px 0;
 }
+.nav-fixed-left .inline-menu .inline-menu-item:first-of-type {
+  padding-left: 0;
+}
 li.inline-menu-item {
   float: left;
 }
 li.inline-menu-item a {
   display: block;
   line-height: 40px;
-  text-align: center;
+  /* text-align: center; */
   padding: 0 20px;
   color: #33475b;
 }
@@ -81,7 +90,7 @@ header {
   content: ' \25BC';
 }
 #language {
-  border-right: 1px solid #32495b;
+  border-right: 1px solid lightgrey;
 }
 ul li a img {
   display: inline-block;
@@ -99,7 +108,7 @@ ul li a img {
   left: 0;
   z-index: 999;
   background-color: #f4f9fd;
-  border-bottom: 1px solid #32495b;
+  border-bottom: 1px solid lightgrey;
 }
 .nav-fixed .nav-fixed-left {
   float: left;
@@ -117,7 +126,7 @@ ul li a img {
 }
 .nav-fixed-right .logins,
 .nav-fixed-right .buttons1 {
-  margin: 0 0 0 10px;
+  margin-left: 10px;
 }
 
 /* menu top */
@@ -140,7 +149,7 @@ ul li a img {
   position: relative;
   height: 750px;
   background: #fff4ef url(../img/jumbotron.png) no-repeat bottom right;
-  background-size: 100%;
+  background-size: cover;
 }
 .jumbo-content {
   width: 25%;
@@ -150,7 +159,6 @@ ul li a img {
 }
 .jumbo-content h1 {
   font-size: 50px;
-  margin-bottom: 10px;
 }
 .jumbo-content p:first-of-type {
   margin: 40px 0;
@@ -159,12 +167,8 @@ ul li a img {
 .hubspotfree {
   width: 40%;
 }
-.hubspotfree p {
+.hubspotfree .p-pic {
   margin: 40px 0;
-  font-size: 12px;
-}
-.hubspotfree .buttons2 {
-  padding: 20px;
 }
 
 /* main */
@@ -208,14 +212,25 @@ main {
 }
 .crm .column1 {
   float: left;
-  width: 30%;
+  width: 20%;
+  margin: 0 10%;
 }
 .crm .column2 {
   float: left;
-  width: 70%;
+  width: 50%;
+  margin-right: 10%;
 }
 .crm .column1 img {
+  display: block;
   width: 150px;
+  margin: 0 auto 30px;
+}
+.crm .column1 a {
+  display: block;
+  text-align: center;
+}
+.crm .column2 h3 {
+  margin
 }
 .crm .column2 .column1 {
   float: left;

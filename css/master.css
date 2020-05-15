@@ -79,7 +79,7 @@ li.inline-menu-item a {
 }
 li.inline-menu-item a:hover {
   transition: 0.5s;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(51, 71, 91, 0.2);
 }
 li.inline-menu-item a:visited {
   color: #33475b;
@@ -172,6 +172,7 @@ ul li a img {
 
 /* jumbotron */
 .jumbo {
+  box-shadow: inset 0px 2px 5px #dedede;
   position: relative;
   height: 750px;
   background: #fff4ef url(../img/jumbotron.png) no-repeat bottom right;

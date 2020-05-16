@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;800&family=Roboto:wght@100;300;400;500&display=swap');
 /* reset della pagina */
 * {
   margin: 0;
@@ -14,19 +14,14 @@ a, a:visited {
   text-decoration: none;
 }
 h1, h2, h3, p {
-  margin: 20px 0;
+  padding: 20px 0;
 }
 .p-pic {
   font-size: 12px;
 }
+/* margini generali della pagina web */
 .container {
   padding: 0 15%;
-}
-/* blocchi di testo */
-.block {
-  background-color: #fff;
-  border: 1px solid lightgrey;
-  border-radius: 5px;
 }
 /* clearfix dei float */
 .wrapper:after, .box:after {
@@ -37,6 +32,12 @@ h1, h2, h3, p {
 /* float generico per le colonne */
 [class*="col-"] {
   float: left;
+}
+/* blocchi di testo */
+.block {
+  background-color: #fff;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
 }
 /* regole per i pulsanti (di tipo a) */
 .button {
@@ -179,6 +180,7 @@ ul li a img {
   background-size: cover;
 }
 .jumbo-content {
+  /* margin-top: 10%; */
   width: 25%;
   position: absolute;
   top: 10%;
@@ -188,14 +190,14 @@ ul li a img {
   font-size: 50px;
 }
 .jumbo-content p:first-of-type {
-  margin: 40px 0;
+  margin: 20px 0;
   line-height: 2em;
 }
 .hubspotfree {
   width: 40%;
 }
 .hubspotfree .p-pic {
-  margin: 40px 0;
+  margin: 20px 0;
 }
 
 /* main */
@@ -221,7 +223,6 @@ ul li a img {
 .rubik h2 {
   font-weight: bold;
   font-size: 30px;
-  margin-bottom: 40px;
 }
 .rubik p {
   font-weight: bold;
@@ -249,7 +250,7 @@ ul li a img {
   text-align: center;
 }
 .crm .col-2 ul li {
-  margin: 0 20px;
+  margin: 20px;
 }
 .crm .col-2 h3,
 .crm .col-2 span {
@@ -260,6 +261,7 @@ ul li a img {
 }
 .crm .col-2 span {
     width: 60%;
+    vertical-align: bottom;
 }
 .crm .col-2 ul {
   padding-bottom: 5px;
@@ -278,23 +280,27 @@ ul li a img {
 .cards {
   padding: 50px 0;
 }
-.cards [class*="col-"] {
+.cards [class*="col"] {
   width: 30%;
   padding: 20px;
   text-align: center;
+  /* position: relative; */
 }
 .cards .col-2 {
   margin: 0 5%;
 }
-.cards [class*="col-"] img {
+.cards [class*="col"] img {
   height: 100px;
 }
-.cards [class*="col-"] ul {
+.cards [class*="col"] p {
+  min-height: 100px;
+}
+.cards [class*="col"] ul {
   list-style-type: none;
   text-align: left;
   margin-bottom: 40px;
 }
-.cards [class*="col-"] ul li:before {
+.cards [class*="col"] ul li:before {
     content: "";
     background: url("../img/Orange_Checkmark.svg") no-repeat;
     width: 18px;
@@ -303,6 +309,53 @@ ul li a img {
     margin-bottom: -5px;
     margin-right: 10px;
   }
+
+/* sezione 2 */
+.section2 {
+  background-color: #00b0b0;
+  background-image: linear-gradient(90deg, #00a6bc, #00b8ab);
+  text-align: center;
+  color: #fff;
+}
+
+/* numbers title */
+.numbers-title {
+  padding: 70px 70px 50px 70px;
+}
+.numbers-title h2 {
+  font-size: 30px;
+}
+.numbers-title p {
+  padding-top: 0;
+}
+
+/* numbers table */
+.numbers-table {
+  padding-bottom: 70px;
+}
+.numbers-table-row-1 {
+  border-bottom: 1px solid #fff;
+}
+[class*="numbers-table-row"] [class*="col"] {
+  width: 25%;
+  padding: 30px;
+  border-right: 1px solid #fff;
+}
+[class*="numbers-table-row"] [class*="col"]:last-of-type {
+  border-right: none;
+}
+[class*="numbers-table-row"] [class*="col"] img {
+  height: 30px;
+}
+.amount {
+  font-size: 50px;
+  font-weight: bold;
+}
+.amount .plus {
+  font-size: 25px;
+  font-weight: 300;
+  vertical-align: middle;
+}
 
 
 /* footer */

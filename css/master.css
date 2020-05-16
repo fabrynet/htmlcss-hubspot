@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;800&family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500&display=swap');
 /* reset della pagina */
 * {
   margin: 0;
@@ -15,6 +15,10 @@ a, a:visited {
 }
 h1, h2, h3, p {
   padding: 20px 0;
+}
+.title {
+  font-size: 50px;
+  font-weight: bold;
 }
 .p-pic {
   font-size: 12px;
@@ -293,7 +297,7 @@ ul li a img {
   height: 100px;
 }
 .cards [class*="col"] p {
-  min-height: 100px;
+  min-height: 150px;
 }
 .cards [class*="col"] ul {
   list-style-type: none;
@@ -347,16 +351,58 @@ ul li a img {
 [class*="numbers-table-row"] [class*="col"] img {
   height: 30px;
 }
-.amount {
-  font-size: 50px;
-  font-weight: bold;
-}
-.amount .plus {
+.numbers-table .plus {
   font-size: 25px;
   font-weight: 300;
   vertical-align: middle;
 }
 
+/* sezione 3 */
+
+/* customers */
+.customers {
+  padding: 50px 0;
+}
+.customers [class*="col"] {
+  margin-left: 10%;
+}
+.customers .col-1 {
+  width: 20%;
+}
+.customers .col-2 {
+  width: 50%;
+}
+.customers .col-1 p {
+  font-size: 20px;
+}
+.customers .col-1 p span {
+  font-size: 25px;
+  font-weight: 600;
+}
+[class*="logos-row"] [class*="img"] {
+  display: inline-block;
+  padding: 20px;
+  width: calc((100% / 4) - 4px);
+}
+[class*="logos-row"] [class*="img"] img {
+  width: 100%;
+  min-width: 90px;
+  vertical-align: middle;
+}
+
+/* growing */
+.growing {
+  padding: 50px 0;
+}
+.growing [class*="col"] {
+  width: 50%;
+}
+.growing .col-2 {
+  text-align: right;
+}
+.growing .col-2 img {
+  width: 350px;
+}
 
 /* footer */
 footer {

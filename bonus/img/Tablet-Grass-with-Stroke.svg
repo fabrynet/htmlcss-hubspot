@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 772 141" style="enable-background:new 0 0 772 141;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#Grass_1_);}
+	.st1{fill:none;stroke:#2D3E50;stroke-width:3.2;stroke-linecap:square;}
+</style>
+<title>Group 2</title>
+<desc>Created with Sketch.</desc>
+<g id="Final">
+	<g id="Group-2" transform="translate(2.000000, 1.000000)">
+		
+			<linearGradient id="Grass_1_" gradientUnits="userSpaceOnUse" x1="348.4413" y1="105.7623" x2="347.3824" y2="105.7344" gradientTransform="matrix(768 0 0 -139 -266914 14770)">
+			<stop  offset="0" style="stop-color:#00A38D"/>
+			<stop  offset="0.3747" style="stop-color:#00BDA5"/>
+			<stop  offset="0.8321" style="stop-color:#7FDED2"/>
+			<stop  offset="1" style="stop-color:#FFFFFF"/>
+		</linearGradient>
+		<rect id="Grass" x="-2" y="1" class="st0" width="772" height="139"/>
+		<path id="HR" class="st1" d="M-2,1h772"/>
+	</g>
+</g>
+</svg>

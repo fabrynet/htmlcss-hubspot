@@ -23,6 +23,14 @@ h1, h2, h3, h4, p {
 .p-pic {
   font-size: 12px;
 }
+.new {
+  font-size: 12px;
+  color: #fff;
+  background-color: #00bda5;
+  border-radius: 3px;
+  padding: 3px 6px;
+  vertical-align: top;
+}
 /* margini generali della pagina web */
 .container {
   padding: 0 15%;
@@ -84,7 +92,8 @@ li.inline-menu-item a {
 }
 li.inline-menu-item a:hover {
   transition: 0.5s;
-  background-color: rgba(51, 71, 91, 0.2);
+  /* background-color: rgba(51, 71, 91, 0.2); */
+  background-color: #e5f5f8;
 }
 li.inline-menu-item a:visited {
   color: #33475b;
@@ -121,12 +130,13 @@ ul li a i {
   border: 1px solid lightgrey;
   border-radius: 5px;
   min-width: 150px;
+  padding: 15px 20px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 .inline-menu-dropdown a.link-dropdown {
   color: #33475b;
-  padding: 5px 20px;
+  padding: 10px 20px;
   text-decoration: none;
   display: block;
   text-align: left;
@@ -155,12 +165,14 @@ ul li a i {
 }
 .inline-menu-dropdown-item a.link-dropdown:hover {
   background-color: #e5f5f8;
+  border-radius: 5px;
 }
 .inline-menu-dropdown-item .img-dropdown {
   vertical-align: top;
 }
 .dropdown:hover .inline-menu-dropdown {
   display: block;
+
 }
 
 /* header */
@@ -187,7 +199,7 @@ header {
 .nav-fixed .col-1, .nav-fixed .col-2 {
   width: 50%;
 }
-#language-dropdown:before {
+.nav-fixed-left .inline-menu-item.dropdown > a:before {
   content: "";
   background: url("../img/language-switcher-icon.svg") no-repeat;
   display: inline-block;
@@ -195,12 +207,15 @@ header {
   height: 1.6rem;
   padding-right: 2rem;
 }
-#language-dropdown {
+.nav-fixed-left .inline-menu-item.dropdown > a {
   border-right: 1px solid lightgrey;
   padding-left: 0;
 }
-.nav-fixed-left .inline-menu-dropdown {
+.nav-fixed-left .inline-menu-dropdown.language {
   padding: 15px 0;
+}
+.inline-menu-dropdown.language a.link-dropdown {
+  padding: 0 20px;
 }
 .nav-fixed .col-2 {
   text-align: right;
@@ -224,18 +239,21 @@ header {
   /* margine superiore per lasciare spazio al menu con position fixed */
   margin-top: 80px;
   height: 80px;
-  line-height: 40px;
 }
-.nav-top .wrapper {
+.nav-top .wrapper.wrapper-nav-top {
   padding: 20px 0;
 }
 .nav-top .logo {
   width: 15%;
   padding-top: 5px;
+  line-height: 40px;
 }
 .nav-top .navbar {
   width: 85%;
   text-align: right;
+}
+.navbar.col-2 .inline-menu-item > a {
+  line-height: 40px;
 }
 .nav-top .navbar .inline-menu {
   font-weight: 700;
@@ -245,7 +263,6 @@ header {
 /* menu dropdown software*/
 .nav-top .navbar .inline-menu-dropdown.software {
   width: 450px;
-  padding: 15px 20px;
 }
 .inline-menu-dropdown.software .img-dropdown {
   display: inline-block;
@@ -264,7 +281,6 @@ header {
 .nav-top .navbar .inline-menu-dropdown.resources {
   width: 800px;
   left: 50%;
-  padding: 15px 20px;
 }
 .inline-menu-dropdown.resources [class*="resources-row"] .inline-menu-dropdown-item {
   float: left;
@@ -275,7 +291,6 @@ header {
 .nav-top .navbar .inline-menu-dropdown.partners {
   width: 600px;
   left: 60%;
-  padding: 15px 20px;
 }
 .inline-menu-dropdown.partners .inline-menu-dropdown-item {
   float: left;
@@ -286,7 +301,6 @@ header {
 .nav-top .navbar .inline-menu-dropdown.about {
   width: 600px;
   left: 60%;
-  padding: 15px 20px;
 }
 .inline-menu-dropdown.about [class*="col"] {
   float: left;
@@ -297,7 +311,7 @@ header {
   font-weight: normal;
 }
 .inline-menu-dropdown.about h4 {
-  padding: 0 20px;
+  padding: 10px 0 15px 20px;
   text-align: left;
 }
 

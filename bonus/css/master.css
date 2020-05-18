@@ -240,6 +240,7 @@ header {
 .nav-top .navbar .inline-menu {
   font-weight: 700;
 }
+
 /* bonus */
 /* menu dropdown software*/
 .nav-top .navbar .inline-menu-dropdown.software {
@@ -267,7 +268,7 @@ header {
 }
 .inline-menu-dropdown.resources [class*="resources-row"] .inline-menu-dropdown-item {
   float: left;
-  width: 33%;
+  width: calc(100% / 3);
 }
 
 /* menu dropdown partners */
@@ -280,6 +281,27 @@ header {
   float: left;
   width: 50%
 }
+
+/* menu dropdown about */
+.nav-top .navbar .inline-menu-dropdown.about {
+  width: 600px;
+  left: 60%;
+  padding: 15px 20px;
+}
+.inline-menu-dropdown.about [class*="col"] {
+  float: left;
+  width: calc(100% / 3);
+}
+.inline-menu-dropdown.about a {
+  font-size: 14px;
+  font-weight: normal;
+}
+.inline-menu-dropdown.about h4 {
+  padding: 0 20px;
+  text-align: left;
+}
+
+/* /nav-top */
 
 /* jumbotron */
 .jumbo {

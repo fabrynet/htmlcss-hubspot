@@ -65,7 +65,7 @@ h1, h2, h3, h4, p {
 }
 .login {
   display: inline-block;
-  background-color: transparent;
+  background-color: #fff;
   padding: 10px;
   border: 1px solid #fe775a;
   border-radius: 5px;

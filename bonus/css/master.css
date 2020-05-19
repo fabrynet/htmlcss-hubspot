@@ -123,8 +123,8 @@ ul li a i {
 /* bonus */
 /* dropdown menu */
 .inline-menu-dropdown {
-  list-style-type: none;
   display: none;
+  list-style-type: none;
   position: absolute;
   background-color: #fff;
   border: 1px solid lightgrey;
@@ -172,7 +172,6 @@ ul li a i {
 }
 .dropdown:hover .inline-menu-dropdown {
   display: block;
-
 }
 
 /* header */

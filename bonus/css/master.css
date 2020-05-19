@@ -92,8 +92,8 @@ li.inline-menu-item a {
 }
 li.inline-menu-item a:hover {
   transition: 0.5s;
-  /* background-color: rgba(51, 71, 91, 0.2); */
   background-color: #e5f5f8;
+  border-radius: 5px;
 }
 li.inline-menu-item a:visited {
   color: #33475b;
